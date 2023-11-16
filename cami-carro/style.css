@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.padre {
+    background-image: url(imagenes/fondo1.png);
+    background-size: 100%;
+    height: 100rem;
+   
+}
+.fondo_animado{
+    animation: fondo-move 10s linear infinite;
+}
+.oculto{
+    display: none;
+}
+@keyframes fondo-move {
+
+    100% {
+
+        background-position-x: -1000rem;
+
+    }
+
+}
+
+.auto {
+    display: flex;
+    position: absolute;
+    top: 70rem;
+    left: 20rem;
+}
+
+.sprites {
+
+    background: url(imagenes/sprites\ camila.png);
+    position: absolute;
+    top: 93.5rem;
+    left: 14rem;
+    height: 48.5691px;
+    width: 198.194px;
+    animation: sprites .5s steps(4) infinite;
+    animation-direction: reverse;
+    
+
+}
+
+@keyframes sprites {
+
+    100% {
+
+        background-position-x: 2000px;
+
+    }
+
+}
+
+.llanta {
+    display: flex;
+    position: absolute;
+    top: 81rem;
+    left: 43rem;
+}
+
+.llantas {
+    display: flex;
+    position: absolute;
+    top: 81rem;
+    left: 22rem;
+}
+
+.wheels {
+    width: 16rem;   
+
+}
+.wheels2 {
+    width: 16rem;   
+
+}
+.llantas_animadas{
+    animation: ruedas1-move 1s linear infinite;
+}
+
+@keyframes ruedas1-move {
+
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+
+
+}
+
+.luz{
+    
+    display: flex;
+    position: absolute;
+    top: 75rem;
+    left: 54rem;
+    
+}
+
+@keyframes brillo-move{
+    100%{
+
+        opacity: 10%;
+
+    }
+
+
+}
+
+.brillo{
+    display: none;
+}
